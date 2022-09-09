@@ -1,0 +1,438 @@
+
+:root{
+    --color: rgba(0, 0, 0, 0.9);
+    --hover: rgb(236, 16, 38);
+}
+
+
+#home-page{
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at 85% 75%, #ff99b9 30%, #fc5882);
+}
+
+
+#header{
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav{
+    width: auto;
+    height: auto;
+}
+
+#nav a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+    margin: 0 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#shop-title{
+    display: flex;
+    width: 50px;
+    align-items: center;
+}
+
+hr{
+    height: 50px;
+    margin: 10px;
+}
+
+#shop-text{
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    
+} 
+
+#shop-text p{
+    margin: -10px 0;
+}
+
+i{
+    color: white;
+    width: 200px;
+    margin: 5px;
+}
+
+#main{
+    height: calc(100vh - 80px);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+.section{
+    /* height: calc(100vh - (80px + 5vh)) auto; */
+    height: 90vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#section1{
+    position: relative;
+    left: 2%;
+    bottom: 5%;
+    width: 47vw;
+    padding: 20px;
+    letter-spacing: 5px;
+}
+
+.sec-text{
+    text-align: center;
+    margin: -10px;
+    color: white;
+}
+
+#sec-1{
+    font-size: 40px;
+}
+
+#sec-2{
+    letter-spacing: 1px;
+    font-size: 65px;
+    font-weight: 900;
+}
+
+.btn{
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#shop{
+    margin: 20px 0;
+    padding: 10px 15px;
+    font-size: 12px;
+    background: black;
+    color: white;
+    letter-spacing: 3px;
+    margin: 50px 0;
+    
+}
+
+#url{
+    margin: -20px;
+    padding: 5px 12px;
+    font-weight: 700;
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    letter-spacing: 3px;
+    border: 1px solid black;
+}
+
+
+#section2{
+    width: 50vw;
+    position: relative;
+    right: 15%;
+    bottom: 5%;
+}
+
+#section2 img{
+    position: absolute;
+    top: -4%;
+    right: 12%;
+    /* flex-direction: column; */
+}
+
+#section2 #circle{
+    position: relative;
+    bottom: 18%; 
+    left: 11%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 8px solid white;
+
+}
+
+#emoji-div{
+    margin: 10px;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    bottom: 45%;
+    right: 10%;
+    transition: 0.3s all;
+}
+
+#emoji{
+    
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+#emoji-div a{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 900;
+    border-radius: 20px;
+    width: 60px;
+}
+
+#emoji:last-child{
+    color: red;
+}
+
+#arrival{
+    position: relative;
+    top: 7%;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 17px;
+    left: -3%;
+    padding: 6px 10px 6px 70px;
+    color: black;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#foot{
+    position: relative;
+    bottom: 17vh;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+
+}
+
+.min-foot{
+    width: 50vw;
+}
+
+#adrs{
+    font-weight: 800;
+    font-size: 17px;
+    color: white;
+    text-align: left;
+    margin: 5px;
+    padding: 0 20px;
+}
+
+#social{
+    margin: 0 10px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: 700;
+}
+
+#social a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 8px;
+    margin: 5px;
+}
+
+/* Hover navbar and social */
+
+#social a:hover,
+#social a.active,
+#nav a:hover,
+#nav a.active{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    transition: 0.3s linear;
+}
+
+
+#desire:hover{
+    border-bottom: 3px solid var(--hover);
+}
+
+/* Products Start here  */
+
+main{
+    width: auto;
+    height: auto;
+    transition: 0.3s linear
+}
+
+.products{
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+    letter-spacing: 5px;
+}
+
+
+.products:hover{
+    text-decoration: underline;
+}
+
+main #mobiles{
+    width: 100vw;
+    height: 510px;
+    display: flex;
+}
+
+main #mobiles .item{
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+
+main #mobiles .item img{
+    width: 100%;
+    border: 2px solid grey;
+    border-radius: 7px;
+}
+
+.details{
+    padding: 10px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.per-off{
+    background-color: var(--hover);
+    letter-spacing: -1px;
+    margin: 2px 5px;
+    padding: 5px;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.end{
+    font-size: 13px;
+    color: var(--hover);
+}
+
+.price{
+    padding: 25px 5px;
+    font-size: 20px;
+}
+
+.rup-off{
+    font-size: 12px;
+    color: grey;
+}
+
+.shop{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy{
+    padding: 10px 25px;
+    margin: 8px 40px;
+    border-radius: 5px;
+    color: var(--color);
+    font-weight: 500;
+    font-size: 15px;
+    border: 2px solid var(--hover);
+    text-align: center;
+}
+
+.buy:hover{
+    background-color: var(--hover);
+    color: white;
+}
+
+footer{
+    position: absolute;
+    width: 100vw;
+    height: 550px;
+}
+
+#foot-data{
+    position: relative;
+    top: 60%;
+    width: 100%;
+    height: 220px;
+    background-color: var(--color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-foot{
+    width: 33.3%;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about-foot h1{
+    color: var(--hover);
+    padding: 10px;
+}
+
+#about-foot p{
+    padding: 0 20px;
+}
+
+#email-foot{
+    display: flex;
+    align-items: center;
+}
+
+#email-foot p{
+    margin: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#email-foot input{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 6px 15px;
+    width: 80%;
+    font-weight: 700;
+}
+
+#email-foot span{
+    margin: 15px;
+    padding: 10px 20px;
+    background-color: var(--hover);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#email-foot span:hover{
+    background-color: #fb0643;
+}
+
+#social-foot{
+    display: flexbox;
+    align-items: center;
+}
+
+
+
+
+
+
